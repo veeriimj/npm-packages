@@ -1,0 +1,98 @@
+
+
+.screening-add-question-modal-container {
+    height: auto;
+    font-style: normal; // add to overwrite font-style coming from global i (icon) class in edit case
+
+    .modal-header-content {
+        background-color: #f3f3f3;
+        padding: 0px 15px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .screening-question-type-dropdown {
+            width: 250px;
+            height: 42px;
+            padding: 12px 38px 12px 20px;;
+        }
+
+        .checkbox {
+            margin-top: 0px;
+        }
+    }
+
+    .modal-content-section {
+        font-size: 16px;
+        color: #2b2b2b;
+        line-height: 1.2;
+        padding: 15px;
+
+        .section-heading {
+            font-size: 14px;
+            color: #2b2b2b;
+            padding-bottom: 10px;
+        }
+
+        .screening-text-area {
+            margin-bottom: 15px;
+            font-size: 14px;
+            background-color: #fff;
+            border: 1px solid #e4e4e4;
+            outline: none;
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            line-height: 1.5;
+            overflow-x: hidden;
+            resize: none;
+            padding: 15px 20px;
+            border-radius: 4px;
+            vertical-align: top;
+        }
+
+        .question-area {
+            .question-text-area {
+                width: 100%;
+                min-height: 150px;
+            }
+        }
+
+        .options-area {
+            .option-text-area {
+                width: 50%;
+                min-height: 50px;
+            }
+
+            .icon-cross {
+                position: relative;
+                top: 23px;
+                right: -20px;
+                color: #818181;
+                cursor: pointer;
+            }
+
+            .options-error {
+                font-size: 12px;
+                position: relative;
+                top: -14px;
+                left: 2px;
+                color: #d00a42;
+            }
+        }
+    }
+
+    .action-link {
+        color: #155d9a;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .modal-footer-section {
+        padding: 0px 15px 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

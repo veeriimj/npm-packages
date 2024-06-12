@@ -1,0 +1,30 @@
+.text-area-container {
+    // min-height: 100px;
+    width: -webkit-fill-available;
+    height: auto;
+    overflow-x: hidden;
+    outline: 0;
+    resize: none;
+    padding: 10px 10px 0px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--dividers, rgba(126, 126, 126, 0.20));
+
+    color: #333;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+
+    &.on-error {
+        border-color: #D11124;
+    }
+
+    &:focus {
+        border-color: #49966E
+    }
+}
+
+textarea::placeholder {
+    font-style: italic;
+}

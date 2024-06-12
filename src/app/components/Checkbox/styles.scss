@@ -1,0 +1,46 @@
+.checkbox {
+    input {
+        display: none;
+    }
+
+    label {
+        user-select: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+        color: #2b2b2b;
+    }
+
+    input+label {
+        padding: 5px 0 4px 35px;
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIg0KCXhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIg0KCXdpZHRoPSIxOXB4IiBoZWlnaHQ9IjE5cHgiIHZpZXdCb3g9IjAgMCAxOSAxOSI+DQo8Y2xpcFBhdGggaWQ9ImNsaXAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiLz48L2NsaXBQYXRoPjxkZWZzPg0KPHN5bWJvbCBpZD0ic3ltYm9sMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE5IiBoZWlnaHQ9IjE5Ii8+PC9zeW1ib2w+PC9kZWZzPg0KPGc+PHVzZSB4bGluazpocmVmPSIjc3ltYm9sMCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE5IiBoZWlnaHQ9IjE5IiBmaWxsPSJyZ2IoMjQ5LDI0OSwyNDkpIi8+PHVzZSB4bGluazpocmVmPSIjc3ltYm9sMCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE5IiBoZWlnaHQ9IjE5IiBmaWxsPSJub25lIiBzdHJva2U9InJnYigxOTUsMTk1LDE5NSkiIHN0cm9rZS13aWR0aD0iMi4wMHB4IiBjbGlwLXBhdGg9InVybCgjY2xpcDApIi8+PC9nPjwvc3ZnPg==");
+        background-repeat: no-repeat;
+        background-size: 17px;
+        background-position: left 2px center;
+    }
+
+    // input:disabled + label {
+    //     background-image: url('../../../assets/disabled_checkbox.svg');
+    //     cursor: not-allowed;
+    //     color: #a7a4a4;
+    // }
+
+    input:checked+label {
+       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAA9lBMVEXCwsLLy8vLy8vMzMzMzMzR0dHR0dHS0tLS0tLS0tKvr6+urq6urq6qqqqioqKjo6OhoaGioqKfn5+cnJygoKChoaGcnJyfn5+bm5ucnJybm5uampohISEiIiIjIyMkJCQlJSUmJiYnJycoKCgpKSkqKiorKyssLCwuLi4vLy8zMzM3Nzc4ODg5OTk6Ojo7Ozs9PT1BQUFFRUVGRkZOTk5QUFBSUlJWVlZZWVllZWVsbGx2dnaCgoKJiYmKioqLi4uOjo6RkZGZmZmurq68vLzExMTOzs7V1dXW1tbX19fY2NjZ2dna2tru7u729vb4+Pj8/Pz///9Iuju/AAAAHHRSTlMjSElKS15fYmNklpmansPDxMTGx8nJysrLy9DRHd1K8QAAAMhJREFUeAFlztdSwzAQhWHRQyeQ0CUkRbsKKDjGptj0Loopev+XgRkGzdr5L7+LM4exidZUvdkxNrm43u3QupvzbGY7GwxpLt9g052B0DSeLP3iUGMMDKq0gXDgRlC7h2fVQAW3wcuIsodoVe8m+HPzj/YItFXyOrycyLjZf7wHIa/C2+keRNz/CHf88rs6E4ARsXz9evqsCmGQoDz24b3gBimCLP3Fn9XO9y1gHWMRHVe03WSZtXbyJKUdZltsfGG1vUJrr839ALQtNmmcRUSlAAAAAElFTkSuQmCC");
+    }
+
+    &.green {
+        input+label {
+            padding: 0px 0 0px 32px;
+            background-image: url('../../../assets/checkbox-uncheck.svg');
+            background-repeat: no-repeat;
+            background-size: 17px;
+            background-position: left 2px center;
+        }
+
+        input:checked+label {
+            background-image: url('../../../assets/checkbox-check.svg');
+        }
+    }
+
+}

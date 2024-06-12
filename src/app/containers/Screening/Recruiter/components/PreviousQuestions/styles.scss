@@ -1,0 +1,99 @@
+.screening-previous-questions-modal-container {
+    height: 500px;
+    padding: 0 15px;
+
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+    // top: 0;
+    // box-shadow: 3px 3px 12.74px 1.26px rgba(0, 0, 0, 0.16);
+    // border: 1px solid #eee;
+    // border-radius: 0px;
+    // overflow: hidden;
+    // z-index: 1;
+    // background-color: #fff;
+    // max-width: 650px;
+
+    .modal-header {
+        font-size: 16px;
+        color: #2b2b2b;
+        font-weight: bold;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .previous-questions-section {
+        height: 370px;
+        font-size: 16px;
+        color: #2b2b2b;
+        line-height: 1.2;
+        overflow-y: auto;
+        padding-right: 35px;
+
+        .previous-question-row {
+            padding-bottom: 10px;
+
+            .option-block {
+                padding-left: 37px;
+                .screening-question-options-block {
+
+                    .view-hide-option-toggle-btn {
+                        display: inline-block;
+                        color: #155d9a;
+                        cursor: pointer;
+                        font-size: 13px;
+        
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .question-option-container {
+                    -webkit-transition: max-height 0.5s linear;
+                    -moz-transition: max-height 0.5s linear;
+                    -ms-transition: max-height 0.5s linear;
+                    -o-transition: max-height 0.5s linear;
+                    transition: max-height 0.5s linear;
+                    opacity: 0;
+                    overflow: hidden;
+
+
+                    &.visible {
+                        opacity: 1;
+                    }
+
+                    .single-option-row {
+                        display: list-item;
+                        margin-left: 18px;
+                        font-size: 14px;
+                        color: #2b2b2b;
+        
+                        &:not(:last-child) {
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-section {
+        border-top: 1px solid #eee;
+        padding: 18px 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .action-link {
+            color: #155d9a;
+            font-size: 13px;
+            cursor: pointer;
+            line-height: 34px;
+        }
+
+        .added-question-count {
+            font-size: 14px;
+            margin-left: auto;
+        }
+    }
+}
