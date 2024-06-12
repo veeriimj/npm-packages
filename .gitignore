@@ -1,0 +1,52 @@
+# excluding node_modules
+node_modules
+
+# excluding deployment script
+deploy.sh
+*-deploy.sh
+
+# excluding configuration.json
+configuration.json
+*-configuration.json
+
+# excluding build
+static/build/*
+
+# excluding editor preferences
+*.sublime-workspace
+*.code-workspace
+
+.DS_Store
+
+credentials.json
+
+# react code
+
+# Don't check auto-generated stuff into git
+recruiter-web-react/coverage
+recruiter-web-react/build/
+recruiter-web-react/node_modules
+recruiter-web-react/stats.json
+recruiter-web-react/.pnp
+recruiter-web-react/.pnp.js
+
+# misc
+recruiter-web-react/.DS_Store
+recruiter-web-react/npm-debug.log*
+recruiter-web-react/yarn-debug.log*
+recruiter-web-react/yarn-error.log*
+
+recruiter-web-react/.env.development.local
+recruiter-web-react/.env.test.local
+recruiter-web-react/.env.production.local
+recruiter-web-react/.env*
+
+# boilerplate internals
+recruiter-web-react/generated-cra-app
+recruiter-web-react/.cra-template-rb
+recruiter-web-react/template
+
+recruiter-web-react/report/
+recruiter-web-react/dist/
+
+
